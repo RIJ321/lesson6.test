@@ -12,8 +12,14 @@ public class Boss extends GameEntity {
         this.saber = saber;
     }
 
+    public Boss(int health,int damage,Weapon weapon) {
+        this.setHealth(health);
+        this.setDamage(damage);
+        this.setSaber(weapon);
+    }
+
     public String printInfo() {
-        return "\n\nStatistics: \n" +
+        return "\n \n" +
                 "Health: " + getHealth() + "\n" +
                 "Damage: " + getDamage() + "\n" +
                 "Weapon: " + getSaber().getNameOfWeapon() + "\n" +

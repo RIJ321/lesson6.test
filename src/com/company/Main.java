@@ -9,7 +9,25 @@ public class Main {
         boss.setBossDamage(45);
         boss.saber.setNameOfWeapon("Baranda");
         boss.saber.setTypeOfWeapon("Physical");*/
-        Weapon w = new Weapon();
+
+        Boss boss=new Boss(400, 50,
+                new Weapon("Baranda","Physical"));
+
+        Skeletons skeleton1=new Skeletons(300,28,
+                new Weapon("Bow","Fire arrows: "));
+
+        Skeletons skeleton2=new Skeletons(330,22,
+                new Weapon("Cross bow","Ice arrows: "));
+
+        System.out.println(
+                boss.printInfo() + skeleton1.printInfo() + skeleton2.printInfo()
+        );
+        /*System.out.println("Boss info: \n health: " + boss.getBossHealth() +
+                "\n damage: " + boss.getBossDamage() + "\n defense type: " + boss
+                .getBossDefenseType() + "\n\n Boss weapon: " + boss.saber.getNameOfWeapon() +
+                "\n type of weapon: " + boss.saber.getTypeOfWeapon()) ;}*/
+
+                /*Weapon w = new Weapon();
 
         Boss boss = new Boss();
 
@@ -37,16 +55,8 @@ public class Main {
         w2.setNameOfWeapon("Bow");
         w2.setTypeOfWeapon("Ice arrows: ");
         skeleton2.getArrows();
-        skeleton2.setSaber(w2);
+        skeleton2.setSaber(w2);*/
 
-
-        System.out.println(
-                boss.printInfo() + skeleton1.printInfo() + skeleton2.printInfo()
-        );
-        /*System.out.println("Boss info: \n health: " + boss.getBossHealth() +
-                "\n damage: " + boss.getBossDamage() + "\n defense type: " + boss
-                .getBossDefenseType() + "\n\n Boss weapon: " + boss.saber.getNameOfWeapon() +
-                "\n type of weapon: " + boss.saber.getTypeOfWeapon()) ;}*/
     }
 }
 

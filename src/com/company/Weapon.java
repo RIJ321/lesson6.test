@@ -8,6 +8,11 @@ public class Weapon {
         return typeOfWeapon;
     }
 
+    public Weapon(String nameOfWeapon, String typeOfWeapon) {
+        this.typeOfWeapon = typeOfWeapon;
+        this.nameOfWeapon = nameOfWeapon;
+    }
+
     public Weapon setTypeOfWeapon(String typeOfWeapon) {
         this.typeOfWeapon = typeOfWeapon;
         return null;
